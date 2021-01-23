@@ -10,6 +10,7 @@ with open("election_data.csv") as csvfile:
     next(election_data)
 
     #Calculate the total number of votes cast
+    #Create variable(s) you will add data into
     total_votes = 0
     khan_votes = 0
     correy_votes = 0

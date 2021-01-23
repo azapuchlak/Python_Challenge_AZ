@@ -12,11 +12,12 @@ with open("budget_data.csv") as csvfile:
     # Question 1 - 
     #Gather the total number of months included in the dataset
     #Add loop for month count
-    #Get month count - Setting aside a place to add
+    #Get month count - Create variable(s)/Set aside a place to add to
     month_count = []
     
     # Question 2 -
     #Get sum of profits and losses
+    #Create variable(s) you will add data into
     sum_rev = []
     #loop through CSV to get both total number of months and the sum of profits and losses in the budget data 
     for row in budgetdata:
@@ -25,6 +26,7 @@ with open("budget_data.csv") as csvfile:
 
     # Question 3 -
     # Calculate the changes in profits and losses 
+    #Create variable(s) you will add data into
     monthly_changes = []
     for revenue_row in range(len(sum_rev)-1):
         #Loop through the sum revenue list by taking the second number and subtracting the
@@ -33,6 +35,7 @@ with open("budget_data.csv") as csvfile:
 
     # Question 4/5 -
     #Calculate the maximum/minimum increase in profits. Report it along side the date it occured.
+    #Create variable(s) you will add data into
     max_number = max(monthly_changes)
 
     min_number = min(monthly_changes)
